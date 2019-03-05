@@ -24,7 +24,7 @@ public interface LibraryService {
 
     Mono<Book> getBookById(@NonNull String id);
 
-    Mono<Book> getBookByTitle(@NonNull String title);
+    Flux<Book> getBookByTitle(@NonNull String title);
 
     Mono<Genre> addNewGenre(@NonNull Genre genre);
 

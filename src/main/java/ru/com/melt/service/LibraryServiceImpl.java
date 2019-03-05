@@ -85,7 +85,7 @@ public class LibraryServiceImpl implements LibraryService {
     }
 
     @Override
-    public Mono<Book> getBookByTitle(@NonNull String title) {
+    public Flux<Book> getBookByTitle(@NonNull String title) {
         return bookRepository.findBookByTitle(title);
     }
 

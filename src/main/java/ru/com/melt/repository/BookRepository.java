@@ -15,7 +15,7 @@ public interface BookRepository extends ReactiveMongoRepository<Book, String> {
 
    Flux<Book> findAllByAuthorsName(String authorName);
 
-   Mono<Book> findBookByTitle(String title);
+   Flux<Book> findBookByTitle(String title);
 
    Mono<Book> findBookById(String id);
 
