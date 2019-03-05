@@ -8,5 +8,5 @@ import ru.com.melt.model.Customer;
 @Repository
 public interface CustomerRepository extends ReactiveMongoRepository<Customer, Long> {
 
-    Mono<Customer> findUserByUsername(String username);
+    Mono<Customer> findCustomerByUsername(String username);
 }
