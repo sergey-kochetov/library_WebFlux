@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Genre {
 
     @Id
-    private Long id;
+    private String id;
 
     @NonNull
     private String genreName;
