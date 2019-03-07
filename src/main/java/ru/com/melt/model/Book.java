@@ -34,4 +34,12 @@ public class Book {
         this.genre = genre;
         this.authors = authors;
     }
+
+    public void addAuthor(Author author) {
+        authors.add(author);
+    }
+
+    public void addComment(Comment comment) {
+        comments.add(comment);
+    }
 }
